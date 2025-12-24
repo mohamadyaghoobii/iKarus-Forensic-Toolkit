@@ -200,7 +200,7 @@ Use cases:
 
 # 🔎 iKarus Output Analyzer (Post-Collection Analysis)
 
-The **iKarus Output Analyzer** (`ikarus_output_analyzer.ps1`) is a post-collection analysis engine designed to systematically review iKarus outputs and highlight attacker activity.
+The **iKarus Output Analyzer** (`ikarus_analyzer.ps1`) is a post-collection analysis engine designed to systematically review iKarus outputs and highlight attacker activity.
 
 ## 🎯 Analyzer Objectives
 
@@ -223,13 +223,13 @@ The **iKarus Output Analyzer** (`ikarus_output_analyzer.ps1`) is a post-collecti
 ## 🧪 Analyzer Usage
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\ikarus_output_analyzer.ps1 `
+powershell.exe -ExecutionPolicy Bypass -File .\ikarus_analyzer.ps1 `
   -InputPath "D:\IR\windows_Forensic_HOST_20250101_120000"
 ```
 
 Baseline comparison:
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\ikarus_output_analyzer.ps1 `
+powershell.exe -ExecutionPolicy Bypass -File .\ikarus_analyzer.ps1 `
   -InputPath "D:\IR\case_suspect" `
   -BaselinePath "D:\IR\case_baseline"
 ```
